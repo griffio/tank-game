@@ -54,8 +54,8 @@ Your mission is to destroy all enemy turrets in each level to progress. The game
 - **Enemy Tanks**: These appear in waves (starting with one, then two, then three) and move across the map. They will target and fire at your tank if you're within range.
 
 ### Ammo Types
-- **Armor Piercing (AP)**: Standard ammo, effective against all targets.
-- **High Explosive (HE)**: Special ammo with explosive effects, creating more particles on impact.
+- **Armor Piercing (AP)**: Standard ammo with slightly longer range but less damage, effective against all targets.
+- **High Explosive (HE)**: Special ammo with 30% more damage but 30% less range, creating more particles on impact.
 
 ### Power-ups
 Ammo power-ups will spawn when your ammo levels reach half capacity:

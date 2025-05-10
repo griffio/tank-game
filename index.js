@@ -343,8 +343,8 @@ function fireBullet(ammoType) {
         width: bulletSize,
         height: bulletSize,
         type: ammoType,
-        damage: ammoType === AMMO_TYPES.ARMOR_PIERCING ? 30 : 20,
-        lifetime: 60 // frames
+        damage: ammoType === AMMO_TYPES.ARMOR_PIERCING ? 26 : 39, // AP: less damage, HE: 30% more damage (30 * 1.3 = 39)
+        lifetime: ammoType === AMMO_TYPES.ARMOR_PIERCING ? 70 : 42 // AP: longer range, HE: 30% less range (60 * 0.7 = 42)
     });
 
     // Create muzzle flash particles
@@ -517,7 +517,7 @@ function updateEnemyTanks() {
                     height: 4,
                     type: AMMO_TYPES.ARMOR_PIERCING,
                     damage: 10,
-                    lifetime: 60,
+                    lifetime: 70, // Updated to match player AP bullet lifetime
                     fromTurret: true
                 });
 
@@ -647,7 +647,7 @@ function updateTurrets() {
                     height: 4,
                     type: AMMO_TYPES.ARMOR_PIERCING,
                     damage: scaledDamage,
-                    lifetime: 60,
+                    lifetime: 70, // Updated to match player AP bullet lifetime
                     fromTurret: true
                 });
 
