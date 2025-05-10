@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tank Battle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tank Battle</h1>
+        <div class="game-info">
+            <div id="ammo-display">
+                <span>Armor Piercing: <span id="ap-ammo">10</span></span>
+                <span>High Explosive: <span id="he-ammo">5</span></span>
+            </div>
+            <div id="health-display">Health: <span id="health">100</span></div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="controls-info">
+            <p>WASD: Move | Mouse: Aim | Left Click: Fire AP | Right Click: Fire HE</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
