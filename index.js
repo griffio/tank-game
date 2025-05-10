@@ -99,7 +99,8 @@ const ctx = canvas.getContext('2d');
 const sounds = {
     tankShot: new Audio('assets/tank-shot.wav'),
     tankShotHE: new Audio('assets/tank-shot-he.wav'),
-    turretShot: new Audio('assets/turret-shot.wav')
+    turretShot: new Audio('assets/turret-shot.wav'),
+    explosion: new Audio('assets/explosion.wav')
 };
 
 // Function to play sound effects
@@ -809,6 +810,9 @@ function checkCollisions() {
                     // Create explosion particles
                     createParticles(turret.x, turret.y, 30, '#ff5500');
 
+                    // Play explosion sound
+                    playSound(sounds.explosion);
+
                     // Remove turret
                     turrets.splice(j, 1);
 
@@ -846,6 +850,9 @@ function checkCollisions() {
                 if (tank.health <= 0) {
                     // Create explosion particles
                     createParticles(tank.x, tank.y, 30, '#ff5500');
+
+                    // Play explosion sound
+                    playSound(sounds.explosion);
 
                     // Remove enemy tank
                     enemyTanks.splice(j, 1);

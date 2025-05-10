@@ -112,6 +112,7 @@ The game's code is organized as follows:
   - tank-shot.wav
   - tank-shot-he.wav
   - turret-shot.wav
+  - explosion.wav
 
 ## License
 
