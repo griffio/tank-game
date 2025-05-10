@@ -1276,15 +1276,10 @@ function startNextLevel() {
     enemyTanks = [];
     powerups = [];
 
-    // Reset player position and health
+    // Reset player position only (keeping health and ammo for increased challenge)
     player.x = GAME_WIDTH / 2;
     player.y = GAME_HEIGHT / 2;
-    player.health = 100; // Reset health to full
     updateHealthDisplay(); // Update the health display
-
-    // Reset player ammo
-    player.ammo[AMMO_TYPES.ARMOR_PIERCING] = 10;
-    player.ammo[AMMO_TYPES.HIGH_EXPLOSIVE] = 5;
     updateAmmoDisplay(); // Update the ammo display
 
     // Create new turrets for this level
