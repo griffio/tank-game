@@ -1,5 +1,20 @@
 Created by JetBrains Junie
 
+```text
+Create a single player tank battle game using Javascript/Html/Css and 2d canvas 
+
+The game has the following features
+Top down 2d
+Single Player
+Different terrains - desert , cactus, water
+
+Two different ammo types - armor piercing and high explosive
+Use Particle effects for bullets
+Graphic style is 8 bit graphics
+
+The tank has to avoid being destroyed by automated turrets that will target the tank if within a diameter
+```
+
 # Tank Battle
 
 A top-down 2D single-player tank battle game with retro 8-bit graphics.
